@@ -46,12 +46,13 @@
                         <select name="categories[]" id="categories">
                             @foreach ($categories as $category)
 
-                                <option value="{{$category->id}}"
-                                    @if($task->category == $category->id) selected @endif    
+                                <option style="color: {{$category->color}}" value="{{$category->id}}"
+                                    @if($task->categories[0]->id == $category->id) selected @endif    
                                 >{{$category->name}}</option>
 
                             @endforeach
                         </select>
+
                     </div>
 
                     <input type="submit" value="Editar">

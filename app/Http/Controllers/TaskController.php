@@ -86,6 +86,10 @@ class TaskController extends Controller
         $task->title = $request->title;
         $task->description = $request->description;
         
+        if($request->has('done')){
+            $task->done = $request->done;
+        }
+        
         $task->save();
 
         if($request->has('categories')){
