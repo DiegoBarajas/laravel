@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: clamp(100vw, max-content, max-content);
+    height: clamp(100vh, max-content, max-content);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.anchor-back {
+    position: fixed;
+
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+}
+
+.anchor-back:hover {
+    background-color: rgb(209, 209, 209);
+    color: rgb(41, 41, 41);
+    text-decoration: underline;
+}
+
+label {
+    font-size: 20px;
+}
+
+input, textarea {
+    font-size: 20px;
+    padding: 3px;
+    margin: 5px;
+    max-width: 500px;
+    width: 500px;
+    min-width: 500px;
+}
+
+textarea {
+    min-height: 150px;
+    height: 150px;
+    max-height: 500px;
+}
+
+input:focus, textarea:focus{
+    background-color: rgb(240, 240, 240);
+}
+
+.form-container {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 27px 20px 27px 20px;
+}
+
+.form-container-del {
+    border: 2px solid black;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    padding: 5px 25px 5px 25px;
+    margin-top: -5px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.cb-container {
+    display: flex;
+    justify-content: start;
+    text-align: center;
+}
+
+input[type='checkbox']{
+    max-width: 20px;
+    width: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    height: 20px;
+    min-height: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+input[type='submit']{
+    background-color: rgb(101, 101, 101);
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+
+.input-delete {
+    background-color: rgb(179, 0, 0) !important;
+}
+
+.input-delete:hover {
+    background-color: rgb(142, 0, 0) !important;
+}
+
+input[type='submit']:hover{
+    color: white; 
+    background-color: rgb(81, 81, 81);
+    text-decoration: underline;
+}
+
+
+.anchor-add-task {
+    background-color: rgb(101, 101, 101);
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.anchor-add-task:visited{
+    color: white; 
+}
+
+.anchor-add-task:hover{
+    color: white; 
+    background-color: rgb(81, 81, 81);
+    text-decoration: underline;
+}
+
+.element {
+    width: 500px;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.element a{
+    color: black;
+    text-decoration: none;
+}
+
+.element h4{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.element hr {
+    margin-bottom: 15px;
+}
+
+.element p{
+    font-size: 20px;
+}
+
+.element label{
+    font-size: 17px;
+}
+
+.notification {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 5px;
+    padding: 10px 55px 10px 55px;
+    border: 5px solid rgb(0, 106, 0);
+    background-color: rgb(0, 157, 0);
+    border-radius: 5px;
+    font-size: 20px;
+
+    color: white;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 45px;
+}
+
+.tags-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag {
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px !important;
+    width: fit-content;
+    margin: 5px;
+}
